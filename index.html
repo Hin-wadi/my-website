@@ -36,27 +36,53 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .latest-work, .work-section {
-            padding: 2rem 1rem;
-            text-align: center;
-            margin-top: 2rem;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
         }
-        .latest-work h2, .work-section h2 {
-            margin-bottom: 1rem;
+        .latest-work, .work-section, .about, .contact {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .section-title {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #000;
+            text-transform: uppercase;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .work-item {
             display: inline-block;
-            width: 300px;
-            margin: 1rem;
+            width: 30%;
+            margin: 1%;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         .work-item img {
             width: 100%;
+            height: auto;
         }
         .work-item h3 {
             padding: 1rem;
             margin: 0;
+            font-size: 1.5rem;
         }
         .work-item p {
             padding: 0 1rem 1rem;
@@ -67,11 +93,6 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        video {
-            width: 100%;
-            height: auto;
         }
     </style>
 </head>
@@ -88,39 +109,42 @@
     </nav>
 </header>
 
-<section id="latest-work" class="latest-work">
-    <h2>最新作品</h2>
-    <!-- 将视频嵌入到此处 -->
-    <video controls>
-      <source src="https://github.com/Hin-wadi/my-website/raw/48b0a6651f9d7869fc5714f401d90ad3a5d24576/video/5%E6%9C%884%E6%97%A5-mk.mp4" type="video/mp4"" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-</section>
+<div class="container">
+    <section id="latest-work" class="latest-work">
+        <h2 class="section-title">最新作品</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="https://github.com/Hin-wadi/my-website/raw/main/video/5%E6%9C%884%E6%97%A5-mk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-<section id="work-section" class="work-section">
-    <h2>作品展示</h2>
-    <div class="work-item">
-        <img src="path_to_your_image.jpg" alt="作品1">
-        <h3>作品标题1</h3>
-        <p>作品简介1。</p>
-    </div>
-    <div class="work-item">
-        <img src="path_to_your_image.jpg" alt="作品2">
-        <h3>作品标题2</h3>
-        <p>作品简介2。</p>
-    </div>
-    <!-- 你可以添加更多作品 -->
-</section>
+    <section id="work-section" class="work-section">
+        <h2 class="section-title">作品展示</h2>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="作品1">
+            <h3>作品标题1</h3>
+            <p>作品简介1。</p>
+        </div>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="作品2">
+            <h3>作品标题2</h3>
+            <p>作品简介2。</p>
+        </div>
+        <!-- 你可以添加更多作品 -->
+    </section>
 
-<section id="about" class="about">
-    <h2>关于我</h2>
-    <p>你的个人简介。</p>
-</section>
+    <section id="about" class="about">
+        <h2 class="section-title">关于我</h2>
+        <p>你的个人简介。</p>
+    </section>
 
-<section id="contact" class="contact">
-    <h2>联系</h2>
-    <p>你的联系方式。</p>
-</section>
+    <section id="contact" class="contact">
+        <h2 class="section-title">联系</h2>
+        <p>你的联系方式。</p>
+    </section>
+</div>
 
 <footer>
     <p>© 2024 你的名字. 版权所有.</p>
