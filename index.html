@@ -41,7 +41,7 @@
             margin: 0 auto;
             padding: 2rem;
         }
-        .latest-work, .work-section, .about, .contact {
+        .section {
             padding: 2rem 0;
             text-align: center;
         }
@@ -59,7 +59,6 @@
             max-width: 100%;
             background: #000;
         }
-        .video-container iframe,
         .video-container video {
             position: absolute;
             top: 0;
@@ -102,15 +101,16 @@
     <nav>
         <ul>
             <li><a href="#latest-work">最新作品</a></li>
-            <li><a href="#work-section">作品展示</a></li>
+            <li><a href="#video-works">视频作品</a></li>
+            <li><a href="#design-works">设计作品</a></li>
+            <li><a href="#painting-works">绘画作品</a></li>
             <li><a href="#about">关于我</a></li>
-            <li><a href="#contact">联系</a></li>
         </ul>
     </nav>
 </header>
 
 <div class="container">
-    <section id="latest-work" class="latest-work">
+    <section id="latest-work" class="section">
         <h2 class="section-title">最新作品</h2>
         <div class="video-container">
             <video controls>
@@ -118,31 +118,65 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://github.com/Hin-wadi/my-website/raw/main/video/another-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="https://github.com/Hin-wadi/my-website/raw/main/video/yet-another-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
-    <section id="work-section" class="work-section">
-        <h2 class="section-title">作品展示</h2>
+    <section id="video-works" class="section">
+        <h2 class="section-title">视频作品</h2>
         <div class="work-item">
-            <img src="path_to_your_image.jpg" alt="作品1">
-            <h3>作品标题1</h3>
-            <p>作品简介1。</p>
+            <img src="path_to_your_image.jpg" alt="视频作品1">
+            <h3>视频作品标题1</h3>
+            <p>视频作品简介1。</p>
         </div>
         <div class="work-item">
-            <img src="path_to_your_image.jpg" alt="作品2">
-            <h3>作品标题2</h3>
-            <p>作品简介2。</p>
+            <img src="path_to_your_image.jpg" alt="视频作品2">
+            <h3>视频作品标题2</h3>
+            <p>视频作品简介2。</p>
         </div>
-        <!-- 你可以添加更多作品 -->
     </section>
 
-    <section id="about" class="about">
+    <section id="design-works" class="section">
+        <h2 class="section-title">设计作品</h2>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="设计作品1">
+            <h3>设计作品标题1</h3>
+            <p>设计作品简介1。</p>
+        </div>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="设计作品2">
+            <h3>设计作品标题2</h3>
+            <p>设计作品简介2。</p>
+        </div>
+    </section>
+
+    <section id="painting-works" class="section">
+        <h2 class="section-title">绘画作品</h2>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="绘画作品1">
+            <h3>绘画作品标题1</h3>
+            <p>绘画作品简介1。</p>
+        </div>
+        <div class="work-item">
+            <img src="path_to_your_image.jpg" alt="绘画作品2">
+            <h3>绘画作品标题2</h3>
+            <p>绘画作品简介2。</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
         <h2 class="section-title">关于我</h2>
         <p>你的个人简介。</p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2 class="section-title">联系</h2>
-        <p>你的联系方式。</p>
     </section>
 </div>
 
